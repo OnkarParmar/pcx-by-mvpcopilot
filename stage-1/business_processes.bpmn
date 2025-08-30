@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bPn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="PCX_Order_Management_Process" targetNamespace="http://pcx.procentrex.com">
+
+  <!-- Main Order Management Process -->
+  <bpmn:process id="OrderManagementProcess" name="PCX Complete Order Management Process">
+    
+    <!-- Process A: RFQ/Inquiry Management (from Client) -->
+    <bpmn:startEvent id="start_rfq_received" name="RFQ Received from Client">
+      <bpmn:outgoing>flow_to_rfq_entry</bpmn:outgoing>
+    </bpmn:startEvent>
